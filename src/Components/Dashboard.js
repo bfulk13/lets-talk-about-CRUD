@@ -59,12 +59,10 @@ class Dashboard extends Component {
 
   render() {
     console.log(this.props);
-    let backgroundColor = this.props.background ? '#444' : '#fff';
-    // let color = this.props.color ? '#FFF' : '#111';
+    let backgroundColor = this.props.background ? '#333' : '#fff';
+    let color = this.props.background ? '#FFF' : '#333';
     return (
-      <div style={{ backgroundColor: backgroundColor 
-      // color: color 
-      }}>
+      <div style={{ backgroundColor: backgroundColor, color: color }}>
         <div
           style={{
             display: 'flex',
