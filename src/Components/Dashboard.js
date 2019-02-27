@@ -59,9 +59,12 @@ class Dashboard extends Component {
 
   render() {
     console.log(this.props);
-    let backgroundColor = this.props.background ? 'rgb(0, 255, 76)' : '#fff';
+    let backgroundColor = this.props.background ? '#444' : '#fff';
+    // let color = this.props.color ? '#FFF' : '#111';
     return (
-      <div style={{ backgroundColor: backgroundColor }}>
+      <div style={{ backgroundColor: backgroundColor 
+      // color: color 
+      }}>
         <div
           style={{
             display: 'flex',
@@ -77,7 +80,7 @@ class Dashboard extends Component {
             >
               Logout
             </button>
-            <button onClick={() => this.props.toggle()}>Toggle Settings</button>
+            <button onClick={() => this.props.toggle()}>Toggle Theme</button>
           </div>
         </div>
         <MessageList
